@@ -1,0 +1,53 @@
+/* Tokens de diseño (sección 3.7 del prompt): paleta tomada de los diagramas de EA */
+:root {
+  --color-primario: #1F3FBF;       /* azul FK Empresa–Paquete */
+  --color-primario-oscuro: #172F92;
+  --color-primario-suave: #E8ECFB;
+  --color-secundario: #2A9DB0;     /* teal LandingPage */
+  --color-acento: #F7C600;         /* dorado tablas transaccionales */
+  --color-exito: #2E7D32; --color-exito-suave: #E6F4E7;
+  --color-error: #D0021B; --color-error-suave: #FDE8EA;
+  --color-alerta: #E67E22; --color-alerta-suave: #FDF0E3;
+  --color-info-suave: #E8F0FE;
+  --superficie: #FFFFFF;
+  --superficie-fondo: #F6F7FB;
+  --superficie-crema: #FDF7F1;     /* cajas conceptuales */
+  --superficie-lavanda: #EEF0FF;   /* cajas de tablas */
+  --texto: #1E2430;
+  --texto-suave: #5B6470;
+  --texto-inverso: #FFFFFF;
+  --borde: #D6D9E0;
+  --radio: 10px;
+  --radio-sm: 6px;
+  --sombra: 0 2px 8px rgba(30, 36, 48, .08);
+  --sombra-alta: 0 12px 32px rgba(30, 36, 48, .18);
+  --fuente: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fuente-mono: Consolas, "Cascadia Mono", "SFMono-Regular", Menlo, monospace;
+  --ancho-max: 1200px;
+  --foco: 0 0 0 3px rgba(31, 63, 191, .35);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primario: #7C95FF;
+    --color-primario-oscuro: #9DB0FF;
+    --color-primario-suave: #1E2748;
+    --color-secundario: #5CC4D4;
+    --color-exito: #66BB6A; --color-exito-suave: #173A1D;
+    --color-error: #FF6B7A; --color-error-suave: #43171D;
+    --color-alerta: #FFB36B; --color-alerta-suave: #43301A;
+    --color-info-suave: #1E2748;
+    --superficie: #1A1F2B;
+    --superficie-fondo: #11151D;
+    --superficie-crema: #2B2620;
+    --superficie-lavanda: #242945;
+    --texto: #E8EBF2;
+    --texto-suave: #A4ACBB;
+    --borde: #343B4B;
+    --sombra: 0 2px 8px rgba(0, 0, 0, .4);
+    --sombra-alta: 0 12px 32px rgba(0, 0, 0, .55);
+    --foco: 0 0 0 3px rgba(124, 149, 255, .45);
+    color-scheme: dark;
+  }
+}

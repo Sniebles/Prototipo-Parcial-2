@@ -1,0 +1,27 @@
+{
+  "name": "delta-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API REST del prototipo de Delta Air Lines - Parcial 2, Diseño de Software",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "predev": "node -e \"require('fs').existsSync('node_modules')||(console.error('\\n  Falta instalar las dependencias. Ejecute primero: npm install\\n'),process.exit(1))\"",
+    "dev": "node --watch src/server.js",
+    "prestart": "node -e \"require('fs').existsSync('node_modules')||(console.error('\\n  Falta instalar las dependencias. Ejecute primero: npm install\\n'),process.exit(1))\"",
+    "start": "node src/server.js",
+    "predb:init": "node -e \"require('fs').existsSync('node_modules')||(console.error('\\n  Falta instalar las dependencias. Ejecute primero: npm install\\n'),process.exit(1))\"",
+    "db:init": "node scripts/db-init.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.4"
+  }
+}
